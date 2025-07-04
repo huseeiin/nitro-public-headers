@@ -1,3 +1,3 @@
 export default defineEventHandler((e) => {
-    return "index";
+    return { isUnenv: "__unenv__" in e.node.res };
 });
